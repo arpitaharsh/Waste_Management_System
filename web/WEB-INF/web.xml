@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                               http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- Default page when project opens -->
+    <servlet>
+        <servlet-name>orderSummary</servlet-name>
+        <servlet-class>orderSummary</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>adminServlet</servlet-name>
+        <servlet-class>adminServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/UpdateProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>orderSummary</servlet-name>
+        <url-pattern>/orderSummary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminServlet</servlet-name>
+        <url-pattern>/adminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/AdminServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>loginvalidate</servlet-name>
+        <servlet-class>loginvalidate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>UpdateProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginvalidate</servlet-name>
+        <url-pattern>/loginvalidate</url-pattern>
+    </servlet-mapping>
+    <!-- Signup Servlet -->
+    <servlet>
+        <servlet-name>signup1</servlet-name>
+        <servlet-class>signup1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup1</servlet-name>
+        <url-pattern>/signup1</url-pattern>
+    </servlet-mapping>
+    <!-- Forgot Password Servlet -->
+    <servlet>
+        <servlet-name>forgot1</servlet-name>
+        <servlet-class>forgot1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forgot1</servlet-name>
+        <url-pattern>/forgot1</url-pattern>
+    </servlet-mapping>
+    <!-- Add Waste Servlet -->
+    <servlet>
+        <servlet-name>AddWasteServlet</servlet-name>
+        <servlet-class>AddWasteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddWasteServlet</servlet-name>
+        <url-pattern>/AddWasteServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
